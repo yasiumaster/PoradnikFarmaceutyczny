@@ -62,8 +62,8 @@
             <th class = "kategoriaChoroby">Kategoria Choroby</th>
             <th class = "opis">Opis</th>
             <th class = "lek">Lek</th>
-            <th class = "delete">Delete</th>
-            <th class = "edit">Edit</th>
+            <th class = "delete">Usun</th>
+            <th class = "edit">Edytuj</th>
         </thead>
         <tbody>
             <core:forEach var="choroba" items="${chorobaList}">
@@ -72,8 +72,8 @@
                     <td>${choroba.kategoriaChoroby}</td>
                     <td>${choroba.description}</td>
                     <td>${choroba.lek}</td>
-                    <td><a href="<c:url value="/user/delete-shopping-item${choroba.id}"/>">delete</a></td>
-                    <td><a href="<c:url value="/user/editchoroba${choroba.id}"/>">edit</a></td>
+                    <td><a href="<c:url value="/user/delete-shopping-item${choroba.id}"/>">usun</a></td>
+                    <td><a href="<c:url value="/user/editchoroba${choroba.id}"/>">edytuj</a></td>
                 </tr>
             </core:forEach>
         </tbody>
