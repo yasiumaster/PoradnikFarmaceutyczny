@@ -252,11 +252,11 @@ public class PoradnikFarmaceutycznyController {
 
         List<Choroba> kategoriaChorobies = service.listChoroba();
         Map<String, Double> kategorieIlosc = prepareDataForKategorieChorob(kategoriaChorobies);
-        String kategorieObraz = ChartDrawer.createPieChartImageURIFromData(kategorieIlosc, "Choroby wed³ug kategorii", true);
+        String kategorieObraz = ChartDrawer.createPieChartImageURIFromData(kategorieIlosc, "Choroby wedlug kategorii", true, false);
 
         List<Lek> leki = service.listLeki();
         Map<String, Double> dostepnoscLekow = prepareDataForDostepnoscLekow(leki);
-        String dostepnoscObraz = ChartDrawer.createPieChartImageURIFromData(dostepnoscLekow, "Dostepnosc lekow", true);
+        String dostepnoscObraz = ChartDrawer.createPieChartImageURIFromData(dostepnoscLekow, "Dostepnosc lekow", true, true);
 
         Map<Lek, List<Choroba>> listLekiZchorobami = service.listLekiZchorobami();
         Map<String, Double> chorobyLeki = prepareDataForChorobyLeki(listLekiZchorobami);

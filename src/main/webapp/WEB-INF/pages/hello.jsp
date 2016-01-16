@@ -31,8 +31,7 @@
 	<div class="jumbotron">
 
 
-		<h1>${message}</h1>
-		<h2>${intro}</h2>
+		<h1>Poradnik Farmaceutyczny</h1>
 
 
 	</div>
