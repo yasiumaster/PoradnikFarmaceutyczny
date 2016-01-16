@@ -126,7 +126,7 @@ public class DBLoader {
 
         Lek venomenhal = addLekToDB(defaultUser, "Venomenhal", randomAvailability(), randomPrize());
 
-        Lek wegiel = addLekToDB(defaultUser, "Wêgiel leczniczy", randomAvailability(), randomPrize());
+        Lek wegiel = addLekToDB(defaultUser, "Wegiel leczniczy", randomAvailability(), randomPrize());
 
         Lek wolarex = addLekToDB(defaultUser, "Wolarex", randomAvailability(), randomPrize());
 
@@ -140,7 +140,7 @@ public class DBLoader {
 
 //===============  KATEGORIA CHOROBY ==============================
 
-        KategoriaChoroby skory = addKategoriaChorobyToDB("Choroby skóry?");
+        KategoriaChoroby skory = addKategoriaChorobyToDB("Choroby skory?");
         kategorie.add(skory);
         KategoriaChoroby rzadkie = addKategoriaChorobyToDB("Rzadkie choroby?");
         kategorie.add(rzadkie);
@@ -148,17 +148,17 @@ public class DBLoader {
         kategorie.add(reumatyczne);
         KategoriaChoroby psychosomatyczne = addKategoriaChorobyToDB("Choroby psychosomatyczne?");
         kategorie.add(psychosomatyczne);
-        KategoriaChoroby pokarmowe = addKategoriaChorobyToDB("Choroby uk³adu pokarmowego?");
+        KategoriaChoroby pokarmowe = addKategoriaChorobyToDB("Choroby ukladu pokarmowego?");
         kategorie.add(pokarmowe);
-        KategoriaChoroby oddechu = addKategoriaChorobyToDB("Choroby uk³adu oddechowego");
+        KategoriaChoroby oddechu = addKategoriaChorobyToDB("Choroby ukladu oddechowego");
         kategorie.add(oddechu);
         KategoriaChoroby nowotworowe = addKategoriaChorobyToDB("Choroby nowotworowe");
         kategorie.add(nowotworowe);
-        KategoriaChoroby narzadowe = addKategoriaChorobyToDB("Niewydolnoœæ narz¹dowa?");
+        KategoriaChoroby narzadowe = addKategoriaChorobyToDB("Niewydolnosc narzadowa?");
         kategorie.add(narzadowe);
-        KategoriaChoroby nerwowe = addKategoriaChorobyToDB("Choroby uk³adu nerwowego?");
+        KategoriaChoroby nerwowe = addKategoriaChorobyToDB("Choroby ukladu nerwowego?");
         kategorie.add(nerwowe);
-        KategoriaChoroby zmyslow = addKategoriaChorobyToDB("Choroby narz¹dów zmys³ów");
+        KategoriaChoroby zmyslow = addKategoriaChorobyToDB("Choroby narzadow zmyslow");
         kategorie.add(zmyslow);
         KategoriaChoroby hematologiczne = addKategoriaChorobyToDB("Choroby hematologiczne");
         kategorie.add(hematologiczne);
@@ -166,23 +166,23 @@ public class DBLoader {
         kategorie.add(genetyczne);
         KategoriaChoroby cywilizacyjne = addKategoriaChorobyToDB("Choroby cywilizacyjne");
         kategorie.add(cywilizacyjne);
-        KategoriaChoroby ruchu = addKategoriaChorobyToDB("Choroby uk³adu ruchu?");
+        KategoriaChoroby ruchu = addKategoriaChorobyToDB("Choroby ukladu ruchu?");
         kategorie.add(ruchu);
-        KategoriaChoroby moczowe = addKategoriaChorobyToDB("Choroby uk³adu moczowo-p³ciowego");
+        KategoriaChoroby moczowe = addKategoriaChorobyToDB("Choroby ukladu moczowo-plciowego");
         kategorie.add(moczowe);
-        KategoriaChoroby stanyNagle = addKategoriaChorobyToDB("Stany nag³e w medycynie");
+        KategoriaChoroby stanyNagle = addKategoriaChorobyToDB("Stany nagle w medycynie");
         kategorie.add(stanyNagle);
-        KategoriaChoroby krazenia = addKategoriaChorobyToDB("Choroby uk³adu kr¹¿enia?");
+        KategoriaChoroby krazenia = addKategoriaChorobyToDB("Choroby ukladu kra¿enia?");
         kategorie.add(krazenia);
-        KategoriaChoroby gospodarki = addKategoriaChorobyToDB("Zaburzenia gospodarki wodno-elektrolitowej i równowagi kwasowo-zasadowej");
+        KategoriaChoroby gospodarki = addKategoriaChorobyToDB("Zaburzenia gospodarki wodno-elektrolitowej i rownowagi kwasowo-zasadowej");
         kategorie.add(gospodarki);
         KategoriaChoroby psychiczne = addKategoriaChorobyToDB("Zaburzenia psychiczne");
         kategorie.add(psychiczne);
         KategoriaChoroby rozwoju = addKategoriaChorobyToDB("Zaburzenia rozwoju");
         kategorie.add(rozwoju);
-        KategoriaChoroby odpornosciowe = addKategoriaChorobyToDB("Zaburzenia uk³adu odpornoœciowego");
+        KategoriaChoroby odpornosciowe = addKategoriaChorobyToDB("Zaburzenia ukladu odpornosciowego");
         kategorie.add(odpornosciowe);
-        KategoriaChoroby metabolcizne = addKategoriaChorobyToDB("Zaburzenia wydzielania wewnêtrznego, stanu od¿ywienia i przemiany metabolicznej");
+        KategoriaChoroby metabolcizne = addKategoriaChorobyToDB("Zaburzenia wydzielania wewnetrznego, stanu od¿ywienia i przemiany metabolicznej");
         kategorie.add(metabolcizne);
         KategoriaChoroby zakazne = addKategoriaChorobyToDB("Choroby zakaŸne");
         kategorie.add(zakazne);
@@ -190,129 +190,72 @@ public class DBLoader {
         kategorie.add(zapalenie);
         KategoriaChoroby zawodowe = addKategoriaChorobyToDB("Choroby zawodowe");
         kategorie.add(zawodowe);
-        KategoriaChoroby zespolowe = addKategoriaChorobyToDB("Zespo³y chorobowe?");
+        KategoriaChoroby zespolowe = addKategoriaChorobyToDB("Zespoly chorobowe?");
         kategorie.add(zespolowe);
         KategoriaChoroby dekompresyjne = addKategoriaChorobyToDB("Choroba dekompresyjna");
         kategorie.add(dekompresyjne);
-        KategoriaChoroby spoleczne = addKategoriaChorobyToDB("Choroby spo³eczne");
+        KategoriaChoroby spoleczne = addKategoriaChorobyToDB("Choroby spoleczne");
         kategorie.add(spoleczne);
-        KategoriaChoroby ukladowe = addKategoriaChorobyToDB("Choroby uk³adowe");
+        KategoriaChoroby ukladowe = addKategoriaChorobyToDB("Choroby ukladowe");
         kategorie.add(ukladowe);
         KategoriaChoroby zwyrodnieniowe = addKategoriaChorobyToDB("Choroby zwyrodnieniowe");
         kategorie.add(zwyrodnieniowe);
 //===============  CHOROBA  ==============================
-
-        addChorobaToDB("Zapalenie ucha œrodkowego", tacefur, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zawal", telmisartan, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Wzdecia", ulgix, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Pierwotna ¿ó³ciowa marskosc w¹troby", ursocam, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Kaszel", valsacor, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Alergie", venomenhal, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Problemy zoladkowe", wegiel, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Niedoczynnoœæ tarczycy", wolarex, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Bol oka", xaloptic, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zapalenie zatok przynosowych", xylometazolin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Szkorbut", zajavit, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("HIV", ziagen, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Parkinson", nakom, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Nerwica", nervosol, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Choroba serca", oeparol, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zespó³ suchego oka", optive, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Zaka¿enia bakteryjne", pentaglobin, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Miazdzyca", plavocorin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Problemy zoladkowe", quatrum, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Problemy sercowo-naczyniowe", qumag, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Cukrzyca", ramistad, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Schizofrenia", risperon, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Stwardnienie zanikowe boczne", sclefic, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("Luszczyca", sulphera, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Tradzik", hascoderm, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Sucha skora", hydroskin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Bole wszelkiego rodzaju", ibuprom, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Grzybica skory", itragen, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Rak drog moczowych", javlor, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Przerost gruczolu krokowego", jovesto, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Bialaczka", kamiren, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zakazenia ukladu oddechowego", klimicin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Biegunka", laremid, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Antykoncepcja", logest, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Alzheimer", marbodin, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("Nieplodnosc u kobiet", menopur, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Przeziebienie", cepastil, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Niedobor wapnia", calcenato, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Grzybica skory", dicloabak, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Grzybica skory", daktarin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Grypa", grypolek, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Refluks zoladkowy", gaviscon, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Bialaczka", fludara, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Ukaszenie", fenistil, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Niewydolnosc nerek", eprex, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Problemy skorne", elobaza, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Alergia blony sluzowej nosa", aerius, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("Katar", acatarZatoki, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zaburzenia flory bakteryjnej", acidolac, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Zapalenie miejsc intymnych", albothyl, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("Depresja", anafranil, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Zapalenie skory", baikaderm, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Zapalenie watroby", baraclude, randomCategory(), defaultUser, "osoba kaszle");
-
-        addChorobaToDB("Niedobor witamin", bebilon, randomCategory(), defaultUser, "osoba ma katar");
-
-        addChorobaToDB("Niezyt nosa", betadrin, randomCategory(), defaultUser, "osoba kaszle mokro");
-
-        addChorobaToDB("Zakazenie drog oddechowych", biseptol, randomCategory(), defaultUser, "osoba kaszle");
+        addChorobaToDB("Zapalenie ucha srodkowego", tacefur, randomCategory(), defaultUser, ChorobyOpisy.zapalenieUcha);
+        addChorobaToDB("Zawal", telmisartan, randomCategory(), defaultUser, ChorobyOpisy.zawal);
+        addChorobaToDB("Wzdecia", ulgix, randomCategory(), defaultUser, ChorobyOpisy.wzdecia);
+        addChorobaToDB("Pierwotna ¿olciowa marskosc watroby", ursocam, randomCategory(), defaultUser, ChorobyOpisy.marskosc);
+        addChorobaToDB("Kaszel", valsacor, randomCategory(), defaultUser, ChorobyOpisy.kaszel);
+        addChorobaToDB("Alergie", venomenhal, randomCategory(), defaultUser, ChorobyOpisy.alergie);
+        addChorobaToDB("Problemy zoladkowe", wegiel, randomCategory(), defaultUser, ChorobyOpisy.problemyZoladkowe);
+        addChorobaToDB("Niedoczynnosc tarczycy", wolarex, randomCategory(), defaultUser, ChorobyOpisy.niedoTarczycy);
+        addChorobaToDB("Bol oka", xaloptic, randomCategory(), defaultUser, ChorobyOpisy.bolOka);
+        addChorobaToDB("Zapalenie zatok przynosowych", xylometazolin, randomCategory(), defaultUser, ChorobyOpisy.zapalenieZatok);
+        addChorobaToDB("Szkorbut", zajavit, randomCategory(), defaultUser, ChorobyOpisy.szkorbut);
+        addChorobaToDB("HIV", ziagen, randomCategory(), defaultUser, ChorobyOpisy.hiv);
+        addChorobaToDB("Parkinson", nakom, randomCategory(), defaultUser, ChorobyOpisy.parkinson);
+        addChorobaToDB("Nerwica", nervosol, randomCategory(), defaultUser, ChorobyOpisy.nerwica);
+        addChorobaToDB("Choroba serca", oeparol, randomCategory(), defaultUser, ChorobyOpisy.chorobaSrca);
+        addChorobaToDB("Zespol suchego oka", optive, randomCategory(), defaultUser, ChorobyOpisy.sucheOko);
+        addChorobaToDB("Zaka¿enia bakteryjne", pentaglobin, randomCategory(), defaultUser, ChorobyOpisy.zakazenieBakteryjne);
+        addChorobaToDB("Miazdzyca", plavocorin, randomCategory(), defaultUser, ChorobyOpisy.maizdzyca);
+        addChorobaToDB("Problemy zoladkowe", quatrum, randomCategory(), defaultUser, ChorobyOpisy.problemyZoladkowe);
+        addChorobaToDB("Problemy sercowo-naczyniowe", qumag, randomCategory(), defaultUser, ChorobyOpisy.chorobaSrca);
+        addChorobaToDB("Cukrzyca", ramistad, randomCategory(), defaultUser, ChorobyOpisy.cukrzyca);
+        addChorobaToDB("Schizofrenia", risperon, randomCategory(), defaultUser, ChorobyOpisy.schizofrenia);
+        addChorobaToDB("Stwardnienie zanikowe boczne", sclefic, randomCategory(), defaultUser, ChorobyOpisy.stwardnienieBoczne);
+        addChorobaToDB("Luszczyca", sulphera, randomCategory(), defaultUser, ChorobyOpisy.luszczyca);
+        addChorobaToDB("Tradzik", hascoderm, randomCategory(), defaultUser, ChorobyOpisy.tradzi);
+        addChorobaToDB("Sucha skora", hydroskin, randomCategory(), defaultUser, ChorobyOpisy.suchaSkora);
+        addChorobaToDB("Bole wszelkiego rodzaju", ibuprom, randomCategory(), defaultUser, ChorobyOpisy.bole);
+        addChorobaToDB("Grzybica skory", itragen, randomCategory(), defaultUser, ChorobyOpisy.grzybica);
+        addChorobaToDB("Rak drog moczowych", javlor, randomCategory(), defaultUser, ChorobyOpisy.rakMocz);
+        addChorobaToDB("Przerost gruczolu krokowego", jovesto, randomCategory(), defaultUser, ChorobyOpisy.przerostGr);
+        addChorobaToDB("Bialaczka", kamiren, randomCategory(), defaultUser, ChorobyOpisy.bilaczka);
+        addChorobaToDB("Zakazenia ukladu oddechowego", klimicin, randomCategory(), defaultUser, ChorobyOpisy.zakazenie);
+        addChorobaToDB("Biegunka", laremid, randomCategory(), defaultUser, ChorobyOpisy.biegunka);
+        addChorobaToDB("Antykoncepcja", logest, randomCategory(), defaultUser, ChorobyOpisy.anty);
+        addChorobaToDB("Alzheimer", marbodin, randomCategory(), defaultUser, ChorobyOpisy.alzheimer);
+        addChorobaToDB("Przeziebienie", cepastil, randomCategory(), defaultUser, ChorobyOpisy.przeziebienie);
+        addChorobaToDB("Niedobor wapnia", calcenato, randomCategory(), defaultUser, ChorobyOpisy.niedoborWapnia);
+        addChorobaToDB("Grzybica skory", dicloabak, randomCategory(), defaultUser, ChorobyOpisy.grzybicaSkory);
+        addChorobaToDB("Grzybica skory", daktarin, randomCategory(), defaultUser, ChorobyOpisy.grzybicaSkory);
+        addChorobaToDB("Grypa", grypolek, randomCategory(), defaultUser, ChorobyOpisy.grypa);
+        addChorobaToDB("Refluks zoladkowy", gaviscon, randomCategory(), defaultUser, ChorobyOpisy.refluks);
+        addChorobaToDB("Bialaczka", fludara, randomCategory(), defaultUser, ChorobyOpisy.bialaczka);
+        addChorobaToDB("Ukaszenie", fenistil, randomCategory(), defaultUser, ChorobyOpisy.ukaszenie);
+        addChorobaToDB("Niewydolnosc nerek", eprex, randomCategory(), defaultUser, ChorobyOpisy.nerki);
+        addChorobaToDB("Problemy skorne", elobaza, randomCategory(), defaultUser, ChorobyOpisy.skora);
+        addChorobaToDB("Alergia blony sluzowej nosa", aerius, randomCategory(), defaultUser, ChorobyOpisy.nosAlergia);
+        addChorobaToDB("Katar", acatarZatoki, randomCategory(), defaultUser, ChorobyOpisy.katar);
+        addChorobaToDB("Zaburzenia flory bakteryjnej", acidolac, randomCategory(), defaultUser, ChorobyOpisy.zaburzeniaFlory);
+        addChorobaToDB("Zapalenie miejsc intymnych", albothyl, randomCategory(), defaultUser, ChorobyOpisy.zapalanieInt);
+        addChorobaToDB("Depresja", anafranil, randomCategory(), defaultUser, ChorobyOpisy.depresja);
+        addChorobaToDB("Zapalenie skory", baikaderm, randomCategory(), defaultUser, ChorobyOpisy.zapalanie);
+        addChorobaToDB("Zapalenie watroby", baraclude, randomCategory(), defaultUser, ChorobyOpisy.zapWatroby);
+        addChorobaToDB("Niedobor witamin", bebilon, randomCategory(), defaultUser, ChorobyOpisy.wit);
+        addChorobaToDB("Niezyt nosa", betadrin, randomCategory(), defaultUser, ChorobyOpisy.katar);
+        addChorobaToDB("Zakazenie drog oddechowych", biseptol, randomCategory(), defaultUser, ChorobyOpisy.zakazenie);
 
         session.getTransaction().commit();
         session.close();

@@ -11,8 +11,8 @@
 </head>
 <body>
 <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
-    Bad username/password<br>
-    Type again
+   Zly login/haslo<br>
+    Wpisz ponownie
 </c:if>
 
         <div class="login">
@@ -22,7 +22,7 @@
 
                 <input id="password" name="password" type="password" placeholder="password"/><br>
 
-                <input type="submit" value="Log in"/>
+                <input type="submit" value="Zaloguj"/>
 
             </form>
         </div>

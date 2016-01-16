@@ -13,11 +13,6 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
-
-
-    <mvc:annotation-driven/>
-    <mvc:resources mapping="/resources/**" location="resources/"/>
-
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
@@ -87,23 +82,7 @@
         <security:logout logout-success-url="/" />
     </security:http>
 
-    <!--<authentication-manager>-->
-    <!--<authentication-provider>-->
-    <!--<user-service>-->
-    <!--<user name="defaultUser" password="password" authorities="ROLE_ADMIN" />-->
-    <!--<user name="user" password="pass" authorities="ROLE_USER" />-->
-    <!--</user-service>-->
-    <!--</authentication-provider>-->
-    <!--</authentication-manager>-->
 
-
-
-    <!--<http auto-config="true">-->
-    <!--<security:intercept-url pattern="/members/*" access="ROLE_USER" />-->
-    <!--<security:form-login login-page="/login" default-target-url="/"-->
-    <!--authentication-failure-url="/login/failed" />-->
-    <!--<security:logout logout-success-url="/" />-->
-    <!--</http>-->
     <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
     <bean id="assembler" class="skoczny.jedynak.poradnik.service.Assembler" />
 
@@ -114,6 +93,40 @@
         </security:authentication-provider>
     </security:authentication-manager>
 
+    <context:component-scan base-package="skoczny.jedynak.poradnik" />
+
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/pages/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+
+    <!--<mvc:resources mapping="/resources/**" location="/resources/static/"-->
+                   <!--cache-period="31556926"/>-->
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
+    <!--<mvc:resources mapping="/resources/**" location="resources/static"/>-->
 
 </beans>
 
+        <!--<authentication-manager>-->
+        <!--<authentication-provider>-->
+        <!--<user-service>-->
+        <!--<user name="defaultUser" password="password" authorities="ROLE_ADMIN" />-->
+        <!--<user name="user" password="pass" authorities="ROLE_USER" />-->
+        <!--</user-service>-->
+        <!--</authentication-provider>-->
+        <!--</authentication-manager>-->
+
+
+
+        <!--<http auto-config="true">-->
+        <!--<security:intercept-url pattern="/members/*" access="ROLE_USER" />-->
+        <!--<security:form-login login-page="/login" default-target-url="/"-->
+        <!--authentication-failure-url="/login/failed" />-->
+        <!--<security:logout logout-success-url="/" />-->
+        <!--</http>-->

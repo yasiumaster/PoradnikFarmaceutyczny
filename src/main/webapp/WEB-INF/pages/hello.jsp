@@ -16,15 +16,14 @@
 
 	<div id='cssmenu'>
 		<ul>
-			<li class='rightside'><a href="/user/welcomePage.html"><span>Login as user</span></a></li>
-			<li class='rightside'><a href="/admin/welcomePage.html"><span>Login as admin</span></a></li>
-			<li class='rightside'><a href="/registerPage.html"><span>Register</span></a></li>
+			<li class='rightside'><a href="/user/welcomePage.html"><span>Logowanie</span></a></li>
+			<%--<li class='rightside'><a href="/admin/welcomePage.html"><span>Login as admin</span></a></li>--%>
+			<li class='rightside'><a href="/registerPage.html"><span>Rejestracja</span></a></li>
 		</ul>
 	</div>
 
 </head>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+
 <body>
 
 
@@ -40,17 +39,16 @@
 
 	<div class="row">
 		<div class="col-sm-4">
-
-			<h3>Spending visualization</h3>
-
-			<img src="resources/static/images/samplechart.PNG" alt="sample chart">
-
+			<h3>Znajdz szybko lek</h3>
+			<img src="/resources/static/images/leki.png">
 		</div>
 		<div class="col-sm-4">
-			<h3>Customize your preferences</h3>
+			<h3></h3>
+			<img src="/resources/static/images/farmaceuta.png">
 		</div>
 		<div class="col-sm-4">
-			<h3>Something else</h3>
+			<h3>Sprawdz statystyki</h3>
+			<img src="/resources/static/images/samplechart1.png">
 		</div>
 	</div>
 </div>

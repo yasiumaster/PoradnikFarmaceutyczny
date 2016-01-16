@@ -1,7 +1,6 @@
 package skoczny.jedynak.poradnik.model;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity(name = "choroba")
 public class Choroba {
@@ -22,6 +21,8 @@ public class Choroba {
     private KategoriaChoroby kategoriaChoroby;
 
     private float amount;
+
+    @Column(columnDefinition="TEXT")
     private String description;
 
     private String nazwa;

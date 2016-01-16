@@ -21,7 +21,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <link href="<c:url value="/resources/static/css/demo.css" />" rel="stylesheet">
+
+    <link href="<c:url value="/rresources/static/css/demo.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/static/css/menu.css" />" rel="stylesheet">
     <script src="<c:url value="/resources/static/js/menu.js" />"></script>
 
@@ -44,17 +45,17 @@
         <li class='active'><a href="/user/addchoroba.html"><span>Dodaj chorobe</span></a></li>
         <li class='active'><a href="/user/addlek.html"><span>Dodaj lek</span></a></li>
         <li><a href='/user/viewreport${user.id}'><span>Pokaz wykresy</span></a></li>
-        <li class='rightside'><a href="<c:url value="/j_spring_security_logout" />"><span>Logout</span></a></li>
+        <li class='rightside'><a href="<c:url value="/j_spring_security_logout" />"><span>Wyloguj</span></a></li>
     </ul>
 </div>
 
 <body>
 
-<h2>Welcome ${user.userName}</h2>
+<h2>Witaj ${user.userName}</h2>
 
 <div align="center">
 
-    <h3>List of your spends</h3>
+    <h3>Choroby</h3>
     <table id="shoplist">
         <thead>
             <th class = "nazwa">Nazwa</th>

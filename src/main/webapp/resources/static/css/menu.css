@@ -110,3 +110,7 @@
 #cssmenu ul li.rightside {
   float: right;
 }
+
+#cssmenu ul li.leftside {
+  float: left;
+}

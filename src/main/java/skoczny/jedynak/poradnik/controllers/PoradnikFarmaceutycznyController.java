@@ -256,14 +256,14 @@ public class PoradnikFarmaceutycznyController {
 
         List<Lek> leki = service.listLeki();
         Map<String, Double> dostepnoscLekow = prepareDataForDostepnoscLekow(leki);
-        String dostepnoscObraz = ChartDrawer.createPieChartImageURIFromData(dostepnoscLekow, "Dostêpnoœæ leków", true);
+        String dostepnoscObraz = ChartDrawer.createPieChartImageURIFromData(dostepnoscLekow, "Dostepnosc lekow", true);
 
         Map<Lek, List<Choroba>> listLekiZchorobami = service.listLekiZchorobami();
         Map<String, Double> chorobyLeki = prepareDataForChorobyLeki(listLekiZchorobami);
-        String chorobyLekiObraz = ChartDrawer.createLineChartImageURIFromData(chorobyLeki, "Iloœæ chorób na lek", "Leki", "Iloœæ chorób");
+        String chorobyLekiObraz = ChartDrawer.createLineChartImageURIFromData(chorobyLeki, "Ilosc chorob na lek", "Leki", "Ilosc chorob");
 
         Map<String, Double> cenyLekow = prepareDataForCenyLekow(leki);
-        String cenyLekowObraz = ChartDrawer.createBarChartImageURIFromData(cenyLekow, "Ceny leków", "Nazwa", "Cena");
+        String cenyLekowObraz = ChartDrawer.createBarChartImageURIFromData(cenyLekow, "Ceny lekow", "Nazwa", "Cena");
 
         model.addAttribute("kategorieObraz", kategorieObraz);
         model.addAttribute("dostepnoscObraz", dostepnoscObraz);
@@ -291,7 +291,7 @@ public class PoradnikFarmaceutycznyController {
         }
 
         dostepnoscLekow.put("dostepne", (double) counter);
-        dostepnoscLekow.put("nie dostêpne", (double) (iloscLekow - counter));
+        dostepnoscLekow.put("nie dostepne", (double) (iloscLekow - counter));
         return dostepnoscLekow;
     }
 

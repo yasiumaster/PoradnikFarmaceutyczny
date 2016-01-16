@@ -7,7 +7,7 @@
 <html>
 <head>
 
-    <title>login result</title>
+    <title></title>
 
     <meta charset="utf-8">
 
@@ -50,11 +50,11 @@
 
 <body>
 
-<h2>Welcome ${user.userName}</h2>
+<h2>Witaj ${user.userName}</h2>
 
 <div align="center">
 
-    <h3>List of your spends</h3>
+    <h3>Leki</h3>
     <table id="shoplist">
         <thead>
         <th class = "lek">Nazwa leku</th>

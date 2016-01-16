@@ -11,7 +11,6 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 		model.addAttribute("message", "Poradnik Farmaceutyczny");
-		model.addAttribute("intro", "The Spending Money Supporter");
 		return "hello";
 	}
 }

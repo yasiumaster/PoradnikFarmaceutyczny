@@ -55,7 +55,7 @@ public class LoginResultController {
         return model;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "register", method = RequestMethod.GET)
     public String processRegistration(@ModelAttribute("userForm") User user) {
         Role role = new Role();
         role.setId(1);
@@ -66,6 +66,6 @@ public class LoginResultController {
 //        }
 //        user.setChorobas(chorobaList);
         service.addUserToDB(user);
-        return "regsuc";
+        return "hello";
     }
 }
