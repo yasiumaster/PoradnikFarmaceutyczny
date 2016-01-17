@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import skoczny.jedynak.poradnik.model.*;
 
-import java.text.DecimalFormat;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -24,7 +23,7 @@ public class DBLoader {
 
         Role user = addRoleToDB("user");
 //===============  USER -> defaultUser ==============================
-        User defaultUser = addUserToDB("user", "password", "default.user@gmail.com", new Date(), admin);
+        User defaultUser = addUserToDB("user", "password", "default.user@gmail.com", new Date(), user);
 //===============  LEK ==============================
         Lek aerius = addLekToDB(defaultUser, "Aerius", randomAvailability(), randomPrize());
 
@@ -261,14 +260,6 @@ public class DBLoader {
         session.close();
     }
 
-    private Role addRoleToDB(String roleName) {
-        Role role = new Role();
-        role.setRoleName(roleName);
-        session.save(role);
-
-        return role;
-    }
-
     private void addChorobaToDB(String nazwa, Lek lek, KategoriaChoroby kategoriaChoroby, User user, String description) {
         Choroba choroba = new Choroba();
         choroba.setNazwa(nazwa);
@@ -279,9 +270,17 @@ public class DBLoader {
         session.save(choroba);
     }
 
+    private Role addRoleToDB(String roleName) {
+        Role role = new Role();
+        role.setRoleName(roleName);
+        session.save(role);
+
+        return role;
+    }
+
     private User addUserToDB(String userName, String password, String email, Date defaultReportDate, Role role) {
         User user = new User();
-        user.setUserName(userName);
+        user.setName(userName);
         user.setPassword(password);
         user.setEmail(email);
         user.setDefaultReportDate(defaultReportDate);

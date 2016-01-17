@@ -34,13 +34,12 @@ public class PoradnikFarmaceutycznyDAOImpl implements PoradnikFarmaceutycznyDAO 
     }
 
     @Override
-    public User getUserByUserName(String userName) {
+    public User getUserByUserName(String name) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("from User where userName= :userName ");
-        query.setString("userName", userName);
+        Query query = session.createQuery("from User where name= :name ");
+        query.setString("name", name);
         User user = (User) query.uniqueResult();
 
-        Collections.sort(user.getChorobas(), new ChorobaComparator());
         user.getRole().toString();
         return user;
     }

@@ -17,7 +17,7 @@
   <form:form action="register" method="get" commandName="userForm">
         <legend><span class="number">1</span>Rejestracja do systemu</legend>
         <label>Nazwa uzytkownika:</label>
-        <form:input path="userName" />
+        <form:input path="name" />
         <label>Haslo:</label>
         <form:password path="password" />
         <button type="submit" value="Register">Zarejestruj</button>

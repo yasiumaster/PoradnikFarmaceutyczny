@@ -3,6 +3,7 @@ package skoczny.jedynak.poradnik.model;
 import javax.persistence.*;
 
 @Entity(name = "choroba")
+@Table(name = "choroba")
 public class Choroba {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

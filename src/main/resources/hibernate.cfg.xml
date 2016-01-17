@@ -4,7 +4,14 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/poradnikdb</property>
+
+        <!--OPENSHIFT -->
+        <!--<property name="connection.url">jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/poradnik</property>-->
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <!--<property name="connection.username">adminu91tGXK</property>-->
+        <!--<property name="connection.password">NNl3g_rZVfd-</property>-->
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/poradnik</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.username">root</property>
         <property name="connection.password"></property>

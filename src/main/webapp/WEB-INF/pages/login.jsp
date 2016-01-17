@@ -18,7 +18,7 @@
         <div class="login">
             <form action="/j_spring_security_check" method="POST">
 
-                <input id="username" name="username" type="text" placeholder="username"/><br>
+                <input id="name" name="name" type="text" placeholder="name"/><br>
 
                 <input id="password" name="password" type="password" placeholder="password"/><br>
 

@@ -4,15 +4,16 @@ import javax.persistence.*;
 import java.util.*;
 
 @Entity
+@Table(name = "user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(name="name")
-    private String userName;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
     private String email;
 
@@ -54,12 +55,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -98,7 +99,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", defaultReportDate=" + defaultReportDate +

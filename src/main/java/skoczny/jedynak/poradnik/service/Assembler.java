@@ -18,8 +18,7 @@ public class Assembler {
 
     @Transactional
     public User buildUserFromEntity(skoczny.jedynak.poradnik.model.User user) {
-        System.out.println("hello3");
-        String username = user.getUserName();
+        String username = user.getName();
         String password = user.getPassword();
         boolean enabled = true;
 

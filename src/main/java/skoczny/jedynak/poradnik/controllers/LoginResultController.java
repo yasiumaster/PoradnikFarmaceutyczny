@@ -58,7 +58,7 @@ public class LoginResultController {
     @RequestMapping(value = "register", method = RequestMethod.GET)
     public String processRegistration(@ModelAttribute("userForm") User user) {
         Role role = new Role();
-        role.setId(1);
+        role.setId(2);
         user.setRole(role);
 //        List<Choroba> chorobaList = service.listChoroba();
 //        for (Choroba choroba : chorobaList) {

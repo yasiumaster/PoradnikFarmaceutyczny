@@ -21,7 +21,7 @@
     </tr>
     <tr>
       <td>User Name:</td>
-      <td>${userForm.userName}</td>
+      <td>${userForm.name}</td>
     </tr>
     <tr>
   </table>

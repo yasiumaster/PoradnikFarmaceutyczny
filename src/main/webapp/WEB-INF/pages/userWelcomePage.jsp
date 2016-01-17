@@ -51,7 +51,7 @@
 
 <body>
 
-<h2>Witaj ${user.userName}</h2>
+<h2>Witaj ${user.name}</h2>
 
 <div align="center">
 
