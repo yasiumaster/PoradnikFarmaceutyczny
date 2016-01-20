@@ -24,7 +24,7 @@ public class PoradnikFarmaceutycznyDAOImpl implements PoradnikFarmaceutycznyDAO 
     @Override
     public void addChorobaToDB(Choroba choroba) {
         Session session = this.sessionFactory.getCurrentSession();
-        session.persist(choroba);
+        session.saveOrUpdate(choroba);
     }
 
     @Override
@@ -113,7 +113,7 @@ public class PoradnikFarmaceutycznyDAOImpl implements PoradnikFarmaceutycznyDAO 
     @Override
     public List<KategoriaChoroby> listCategories() {
         Session session = this.sessionFactory.getCurrentSession();
-        List<KategoriaChoroby> categoriesList = session.createQuery("from kategoriaChoroby ").list();
+        List<KategoriaChoroby> categoriesList = session.createQuery("from kategoriachoroby ").list();
         categoriesList.size();
         return categoriesList;
     }

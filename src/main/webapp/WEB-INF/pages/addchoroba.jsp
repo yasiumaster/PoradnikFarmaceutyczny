@@ -39,7 +39,7 @@
 
 
 
-    <h2>Add item to the shopping list</h2>
+    <h2>Dodaj chorobe</h2>
 
     <c:if test="${not empty errorMessage}">
         <c:out value="${errorMessage}"/>
